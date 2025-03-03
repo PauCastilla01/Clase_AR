@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 389967105}
   - component: {fileID: 389967104}
   - component: {fileID: 389967103}
-  - component: {fileID: 389967102}
+  - component: {fileID: 389967106}
   m_Layer: 0
   m_Name: ImageTarget
   m_TagString: Untagged
@@ -141,25 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &389967102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389967101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 389967104}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: hellokitty-2
-  mDatasetName: Vuforia/Clase_AR.xml
-  mCastedBehaviour: {fileID: 389967104}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &389967103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +211,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 389967102}
+  mPreview: {fileID: 389967106}
 --- !u!4 &389967105
 Transform:
   m_ObjectHideFlags: 0
@@ -247,6 +228,25 @@ Transform:
   - {fileID: 659179565}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &389967106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389967101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 389967104}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: hellokitty-2
+  mDatasetName: Vuforia/Clase_AR.xml
+  mCastedBehaviour: {fileID: 389967104}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1001 &659179564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305,6 +305,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -264430861247414160, guid: a4a7311fce0e5a64ab930234af95c3c8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 96ce42a9830fb8d429fd91abcddec149, type: 2}
     - target: {fileID: 919132149155446097, guid: a4a7311fce0e5a64ab930234af95c3c8,
         type: 3}
       propertyPath: m_Name
