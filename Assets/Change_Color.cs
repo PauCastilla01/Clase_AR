@@ -6,8 +6,6 @@ public class Change_Color : MonoBehaviour
 {
     public GameObject model;
     public Material moño;
-
-    // Nuevo material público que se puede asignar desde el Inspector
     public Material materialDeVestido;
 
     // Lista de colores en formato hexadecimal
